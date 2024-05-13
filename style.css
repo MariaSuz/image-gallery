@@ -1,0 +1,179 @@
+body {
+    font-family: "Roboto", sans-serif;
+  }
+
+/* Header */
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.header_div {
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.header {
+    background: #f76060;
+    border-bottom: 5px solid #362323;
+}
+
+.logo-main {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.photo-ico {
+    height: 70px;
+}
+
+h1 {
+    font-style: normal;
+    color: #FFF;
+    line-height: 50px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.search {
+    display: inline-flex;
+    align-items: center;
+}
+.input_header {
+    position: absolute;
+    border-radius: 20px;
+    background: #FFF;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s;
+    padding: 8px 12px;
+    width: 300px;
+    
+}
+
+.lupa-btn {
+    width: 25px;
+    height: 25px; 
+    position: relative;
+    margin-left: 290px;
+    border: 0;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.lupa {
+    width: 20px;
+    height: 20px; 
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+    max-width: 768px;
+    margin: auto;
+    }
+    .header_div {
+        display: flex;
+       align-items: center;
+       flex-direction: column;
+       gap: 0;
+    }
+    
+    .input_header {
+        width: 400px;
+        
+    }
+    .lupa-btn {
+        margin-left: 390px;
+    }
+    .header_div {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+ 
+    }
+    .logo-main {
+        padding: 0;
+        margin: 0;
+        gap: 0;
+    }
+}
+
+
+/* Main*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.images {
+  width: 380px;
+  height: 214px;
+  margin-top: 15px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+ /*  background-image: url(./img/dog.jpg);*/
+}
+
+.images:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.load-more {
+    display: inline-flex;
+    background-color: #f76060;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    
+}
+
+@media (max-width: 768px) {
+    .images {
+        width: 100%;
+      }
+    .images:hover {
+        transition: 1s;
+        transform: scale(0.9);
+    }
+    
+}
+/* Footer */
+
+.wrapper_footer {
+    height: 170px;
+
+}
+.footer {
+    background: #362323;
+}
+
+
+.footer_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+
+}
+
+.year {
+    font-style: normal;
+    color: #FFF;
+    line-height: 100px;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+.footer_img {
+    padding-top: 5px;
+}
